@@ -15,7 +15,7 @@ public class Car : MonoBehaviour
     void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.W)) speed = Mathf.Clamp(speed + Time.deltaTime * 0.1f, 0, 0.4f);
-        else speed = Mathf.Clamp(speed - Time.deltaTime / 2, 0, 100);
+        else speed = Mathf.Clamp(speed - Time.deltaTime / 5, 0, 100);
 
         if (Input.GetKey(KeyCode.D))
         {
